@@ -46,6 +46,12 @@ parameter_defaults:
   EC2MetadataIp: 10.22.131.1
   DnsServers: ["10.22.131.1"]
 
+  NeutronNetworkType: 'vxlan,vlan'                                                                                                    
+  NeutronTunnelTypes: 'vxlan'                                                                                                         
+  NeutronNetworkVLANRanges: 'datacentre:4046:4050'                                                                                    
+  NeutronBridgeMappings: 'datacentre:br-ex'                                                                                           
+  NeutronEnableIsolatedMetadata: True                                                                                                 
+  
 #  NetConfigDataLookup:
 #    node1:
 #      nic1: "52:54:00:48:3e:65"
